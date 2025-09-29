@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hemangini's Pakshala - Traditional Delicacies</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+    
+    <style>
+        /* Define the new Black and Gold theme based on the logo */
+        :root {
+            --color-black: #000000; /* Deep black for primary backgrounds */
+            --color-gold-dark: #c7913e; /* Rich gold for accents, headings, and logo */
+            --color-gold-light: #e6b800; /* Lighter gold for hover states */
+            --color-white: #ffffff; /* Crisp white for main content areas and text */
+        }
+
+        /* Set base styles and use custom font for elegance */
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--color-white);
+            color: var(--color-black);
+        }
+
+        /* Elegant font for headers */
+        h1, h2, h3 {
+            font-family: 'Playfair Display', serif;
+        }
+
+        /* Apply smooth scrolling for navigation links */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Hero Image/Background - Updated to fit the new sweet shop theme */
+        .hero-bg {
+            /* Using a new image placeholder URL reflecting 'Traditional Sweets' */
+            background-image: url('https://placehold.co/1263x600/000000/c7913e?text=Handcrafted+Indian+Sweets');
+            background-size: cover;
+            background-position: center;
+            height: 600px;
+        }
+
+        /* Subtle underline effect for navigation */
+        .nav-link:hover {
+            text-decoration: underline;
+            text-underline-offset: 8px;
+            text-decoration-thickness: 2px;
+            text-decoration-color: var(--color-gold-dark);
+        }
+    </style>
+</head>
+<body class="antialiased">
+
+    <!-- Header & Navigation -->
+    <header class="bg-[--color-black] sticky top-0 z-50 shadow-xl">
+        <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+            
+            <!-- Logo and Title container -->
+            <div class="flex items-center">
+                <!-- Logo Icon Placeholder (Using a simplified gold icon) -->
+                <img src="Golden Elegance of Hemangini's Pakshala.png" alt="Hemangini's Pakshala Logo - Gold Star" class="h-10 w-10 mr-3 rounded-full border-2 border-[--color-gold-dark] shadow-md">
+                
+                <h1 class="text-3xl font-bold text-[--color-gold-dark] tracking-wider">
+                    Hemangini's Pakshala
+                </h1>
+            </div>
+            
+            <nav class="hidden md:flex space-x-8">
+                <a href="#about" class="nav-link text-lg text-[--color-white] hover:text-[--color-gold-dark] transition duration-300">About</a>
+                <a href="#menu" class="nav-link text-lg text-[--color-white] hover:text-[--color-gold-dark] transition duration-300">Delicacies</a>
+                <a href="#contact" class="nav-link text-lg text-[--color-white] hover:text-[--color-gold-dark] transition duration-300">Contact</a>
+            </nav>
+            <!-- Mobile Menu Placeholder -->
+            <button class="md:hidden text-[--color-white] text-2xl">
+                <!-- Hamburger Icon -->
+                &#9776;
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section (Dark and Gold theme) -->
+    <section class="hero-bg flex items-center justify-center relative">
+        <div class="absolute inset-0 bg-black opacity-60"></div>
+        <div class="relative text-center p-8 max-w-2xl bg-white bg-opacity-5 backdrop-blur-sm rounded-xl shadow-2xl border border-white border-opacity-10">
+            <p class="text-xl text-[--color-gold-light] uppercase tracking-widest mb-2 font-semibold">Where Tradition Meets Purity...</p>
+            <h2 class="text-6xl text-white font-bold tracking-tight">Handcrafted with Golden Elegance</h2>
+            <a href="#menu" class="inline-block mt-8 px-8 py-3 bg-[--color-gold-dark] text-white font-semibold rounded-full shadow-xl hover:bg-[--color-gold-light] transition duration-300 transform hover:scale-105">
+                Explore Our Delicacies
+            </a>
+        </div>
+    </section>
+
+    <main class="py-16">
+        <!-- About Section (White Background, Gold Text) -->
+        <section id="about" class="bg-[--color-white] py-20">
+            <div class="max-w-4xl mx-auto px-6 text-center">
+                <h2 class="text-5xl font-bold mb-6 text-[--color-gold-dark]">Our Promise of Purity</h2>
+                <p class="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto">
+                    Welcome to **Hemangini's Pakshala**, where every sweet is a labor of love, steeped in time-honored Indian traditions. We use only the finest, purest ingredients, including **100% Desi Ghee**, fresh milk, and premium nuts, ensuring an authentic and wholesome experience with every bite.
+                </p>
+            </div>
+        </section>
+
+        <!-- Menu Section (Slightly Off-White Background for depth) -->
+        <section id="menu" class="bg-gray-50 py-20">
+            <div class="max-w-7xl mx-auto px-6">
+                <h2 class="text-5xl font-bold text-center mb-12 text-[--color-gold-dark]">Our Signature Delicacies</h2>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    
+                    <!-- Menu Item 1: Kaju Katli (Elegant Cashew Delight) -->
+                    <div class="menu-item p-6 bg-white rounded-xl shadow-lg border-t-4 border-[--color-gold-dark] transition duration-300 hover:shadow-2xl hover:bg-gray-100">
+                        <h3 class="text-3xl font-semibold mb-2 text-[--color-black]">Kaju Katli</h3>
+                        <p class="text-gray-600 mb-4">The diamond standard of sweets. Thin, melt-in-your-mouth cashew fudge, delicately flavored.</p>
+                        <p class="text-2xl font-bold text-[--color-gold-dark]">₹ 800/kg</p>
+                    </div>
+                    
+                    <!-- Menu Item 2: Gulab Jamun (Soft and Syrup-Soaked) -->
+                    <div class="menu-item p-6 bg-white rounded-xl shadow-lg border-t-4 border-[--color-gold-dark] transition duration-300 hover:shadow-2xl hover:bg-gray-100">
+                        <h3 class="text-3xl font-semibold mb-2 text-[--color-black]">Gulab Jamun</h3>
+                        <p class="text-gray-600 mb-4">Soft, deep-fried milk solids, soaked in a fragrant rose-cardamom syrup. Served warm.</p>
+                        <p class="text-2xl font-bold text-[--color-gold-dark]">₹ 450/kg</p>
+                    </div>
+                    
+                    <!-- Menu Item 3: Assorted Laddoos (Traditional Round Sweets) -->
+                    <div class="menu-item p-6 bg-white rounded-xl shadow-lg border-t-4 border-[--color-gold-dark] transition duration-300 hover:shadow-2xl hover:bg-gray-100">
+                        <h3 class="text-3xl font-semibold mb-2 text-[--color-black]">Assorted Laddoos</h3>
+                        <p class="text-gray-600 mb-4">A mix of Besan, Motichoor, and Rava Laddoos—pure, wholesome, and perfectly round.</p>
+                        <p class="text-2xl font-bold text-[--color-gold-dark]">₹ 550/kg</p>
+                    </div>
+                    
+                    <!-- Additional Items for visual completeness -->
+                    <div class="menu-item p-6 bg-white rounded-xl shadow-lg border-t-4 border-[--color-gold-dark] transition duration-300 hover:shadow-2xl hover:bg-gray-100">
+                        <h3 class="text-3xl font-semibold mb-2 text-[--color-black]">Fresh Jalebi</h3>
+                        <p class="text-gray-600 mb-4">Crispy, freshly fried swirls dipped in saffron syrup. Best enjoyed with cool Rabri.</p>
+                        <p class="text-2xl font-bold text-[--color-gold-dark]">₹ 350/kg</p>
+                    </div>
+                    <div class="menu-item p-6 bg-white rounded-xl shadow-lg border-t-4 border-[--color-gold-dark] transition duration-300 hover:shadow-2xl hover:bg-gray-100">
+                        <h3 class="text-3xl font-semibold mb-2 text-[--color-black]">Pista Barfi</h3>
+                        <p class="text-gray-600 mb-4">Rich, dense milk-based fudge infused with high-quality pistachio, a celebratory treat.</p>
+                        <p class="text-2xl font-bold text-[--color-gold-dark]">₹ 750/kg</p>
+                    </div>
+                    <div class="menu-item p-6 bg-white rounded-xl shadow-lg border-t-4 border-[--color-gold-dark] transition duration-300 hover:shadow-2xl hover:bg-gray-100">
+                        <h3 class="text-3xl font-semibold mb-2 text-[--color-black]">Festive Gift Boxes</h3>
+                        <p class="text-gray-600 mb-4">Customizable selections for Diwali, weddings, and special occasions. Contact us for bulk orders.</p>
+                        <p class="text-2xl font-bold text-[--color-gold-dark]">Custom</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section (Black Background, Gold Text) - SWAPPED COLUMNS -->
+        <section id="contact" class="bg-[--color-black] py-20">
+            <div class="max-w-7xl mx-auto px-6 text-[--color-white]">
+                
+                <!-- Use a grid for two columns on medium screens and up -->
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
+                    
+                    <!-- LEFT Column: Logo/Branding (Now the first element) -->
+                    <div class="flex flex-col items-center justify-center p-8 bg-gray-900 rounded-xl shadow-2xl border-4 border-[--color-gold-dark] h-full min-h-[300px] mt-8 md:mt-0 md:order-first">
+                        <img src="Golden Elegance of Hemangini's Pakshala.png" alt="Hemangini's Pakshala Logo" class="w-40 h-40 mb-4 rounded-full border-4 border-[--color-white]"/>
+                        <p class="text-xl font-bold text-[--color-gold-light]">Hemangini's Pakshala</p>
+                        <p class="text-sm text-gray-400 mt-1">Authentic Traditional Delicacies</p>
+                    </div>
+
+                    <!-- RIGHT Column: Text Content (Now the second element) -->
+                    <div class="space-y-8 text-center md:text-left md:order-last">
+                        <h2 class="text-5xl font-bold mb-2 text-[--color-gold-dark]">Visit Our Pakshala</h2>
+                        <p class="text-xl mb-6">Experience the pure taste of tradition in person.</p>
+                        
+                        <div class="space-y-8">
+                            <!-- Location Block -->
+                            <div class="border-l-4 border-[--color-gold-dark] pl-4">
+                                <h3 class="text-3xl font-semibold mb-2 text-[--color-gold-dark]">Location</h3>
+                                <address class="not-italic text-lg">
+                                    123 Main Street, Cityville<br>
+                                    Open Daily: 9:00 AM - 9:00 PM
+                                </address>
+                            </div>
+
+                            <!-- Inquiries Block -->
+                            <div class="border-l-4 border-[--color-gold-dark] pl-4 pt-4 md:pt-0">
+                                <h3 class="text-3xl font-semibold mb-2 text-[--color-gold-dark]">Orders & Inquiries</h3>
+                                <p class="text-lg">For bulk or special orders, call us:</p>
+                                <a href="tel:+1234567890" class="text-2xl font-bold text-[--color-white] hover:text-[--color-gold-dark] transition duration-300">+1 (234) 567-890</a>
+                            </div>
+                        </div>
+
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 py-6">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <p class="text-sm text-gray-400">
+                &copy; 2024 Hemangini's Pakshala. All rights reserved. | <a href="#top" class="hover:text-white transition duration-200">Back to Top</a>
+            </p>
+        </div>
+    </footer>
+
+</body>
+</html>
